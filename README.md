@@ -1,40 +1,34 @@
-<p align="center">
-  <a href="https://ng-alain.com">
-    <img width="100" src="https://ng-alain.com/assets/img/logo-color.svg">
-  </a>
-</p>
 
-<h1 align="center">智慧环保综合监管治理平台——前端项目</h1>
+<h1 align="center">
+Cesium Angular Demo</h1>
 
 <div align="center">
-  一个基于 Antd 中后台前端解决方案，提供更多通用性业务模块，让开发者更加专注于业务。
-
+Just A Demo For Cesium With Angular <br/>
+WebGis 3D，智慧城市，数字孪生，数据可视化，智慧大屏，大数据
 </div>
 
-## 快速入门
 
-- [如何开始使用？](https://ng-alain.com/docs/getting-started)
+## 如何运行
+
+```
+yarn install # 安装依赖
+yarn start # 本地运行
+```
 
 ## 链接
 
-+ [Document](https://ng-alain.com) ([Surge Mirror](https://ng-alain-doc.surge.sh))
-+ [@delon Source](https://github.com/ng-alain/delon)
-+ [DEMO](https://ng-alain.surge.sh) ([国内镜像](https://ng-alain.gitee.io/))
++ [Angular](https://angular.cn/)
++ [Cesium](https://cesium.com/platform/cesiumjs/)
++ [Cesium Source](https://github.com/CesiumGS/cesium)
 
-## 特性
+## Demo实现功能
 
-+ 基于 `ng-zorro-antd`
-+ 响应式
-+ 国际化
-+ 基建类库 [@delon](https://github.com/ng-alain/delon)（包括：业务组件、ACL访问控制、缓存、授权、动态表单等）
-+ 延迟加载及良好的启用画面
-+ 良好的UI路由设计
-+ 定制主题
-+ Less预编译
-+ RTL
-+ 良好的目录组织结构
-+ 简单升级
-+ 支持Docker部署
++ 高德地图 `AMap` 集成
++ Camera的setView flyTo viewBoundingSphere等简单实用
++ 添加Entity 3D Model
++ 添加Entity material 图片
++ 演示实现粒子系统的粒子效果
+
 
 ## Architecture
 
@@ -44,4 +38,4 @@
 
 ### License
 
-The MIT License (see the [LICENSE](https://github.com/ng-alain/ng-alain/blob/master/LICENSE) file for the full text)
+The MIT License 
