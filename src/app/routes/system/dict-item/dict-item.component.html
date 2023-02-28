@@ -1,0 +1,8 @@
+<sf mode="search" [schema]="searchSchema" (formSubmit)="st.reset($event)" (formReset)="st.reset($event)"></sf>
+<button (click)="add()" nz-button nzType="primary">
+  <span nz-icon nzType="plus" nzTheme="outline"></span>
+  新增
+</button>
+<div class="my-sm">
+  <st #st [data]="url" [columns]="columns"></st>
+</div>

@@ -1,0 +1,8 @@
+<!-- eslint-disable prettier/prettier -->
+<page-header autoTitle="false" home="undefined">
+</page-header>
+<nz-card>
+  <sf mode="search" [schema]="searchSchema" [formData]="params" (formSubmit)="st.reset($event)"
+    (formReset)="st.reset(params)"></sf>
+  <st #st [data]="url" [columns]="columns" [req]="{ params: params }"></st>
+</nz-card>

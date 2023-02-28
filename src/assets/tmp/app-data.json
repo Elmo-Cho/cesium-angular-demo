@@ -1,0 +1,183 @@
+{
+  "app": {
+    "name": "智慧环保综合监管治理平台",
+    "description": ""
+  },
+  "menu": [
+    {
+      "text": "工作台",
+      "icon": "anticon-dashboard",
+      "group": false,
+      "hideInBreadcrumb": true,
+      "link": "/dashboard/workplace",
+      "i18n": "menu.dashboard.workplace"
+    },
+    {
+      "text": "主导航",
+      "i18n": "menu.main",
+      "group": true,
+      "hideInBreadcrumb": true,
+      "children": [
+        {
+          "text": "工作台",
+          "icon": "anticon-dashboard",
+          "link": "/dashboard/workplace",
+          "i18n": "menu.dashboard.workplace"
+        },
+        {
+          "text": "小部件",
+          "i18n": "menu.widgets",
+          "link": "/widgets",
+          "icon": "anticon-appstore",
+          "badge": 2
+        },
+        {
+          "text": "模板管理",
+          "icon": "anticon-group",
+          "children":[
+            {
+              "text": "我的模板",
+              "icon": "anticon-deployment-unit",
+              "link": "/processManage/myTemplate"
+            },
+            {
+              "text": "模板中心",
+              "icon": "anticon-mac-command",
+              "link": "/processManage/templateCenter"
+            }
+          ]
+          
+        }
+      ]
+    },
+    {
+      "text": "平台功能",
+      "group": true,
+      "hideInBreadcrumb": true,
+      "children": [
+        {
+          "text": "个人中心",
+          "icon": "anticon-user",
+          "children": [
+            {
+              "text": "个人中心",
+              "link": "/pro/account/center"
+            },
+            {
+              "text": "个人设置",
+              "link": "/pro/account/settings"
+            }
+          ]
+        },
+        {
+          "text": "系统管理",
+          "icon": "anticon-setting",
+          "children": [
+            {
+              "text": "数据字典",
+              "link": "/system/dict",
+              "icon": "anticon-hdd",
+              "reuse": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "Alain",
+      "i18n": "menu.alain",
+      "group": true,
+      "hideInBreadcrumb": true,
+      "children": [
+        {
+          "text": "样式",
+          "i18n": "menu.style",
+          "icon": "anticon-info",
+          "children": [
+            {
+              "text": "Typography",
+              "link": "/style/typography",
+              "i18n": "menu.style.typography",
+              "shortcut": true
+            },
+            {
+              "text": "Grid Masonry",
+              "link": "/style/gridmasonry",
+              "i18n": "menu.style.gridmasonry"
+            },
+            {
+              "text": "Colors",
+              "link": "/style/colors",
+              "i18n": "menu.style.colors"
+            }
+          ]
+        },
+        {
+          "text": "Delon",
+          "i18n": "menu.delon",
+          "icon": "anticon-bulb",
+          "children": [
+            {
+              "text": "Dynamic Form",
+              "link": "/delon/form",
+              "i18n": "menu.delon.form"
+            },
+            {
+              "text": "Simple Table",
+              "link": "/delon/st",
+              "i18n": "menu.delon.table"
+            },
+            {
+              "text": "Util",
+              "link": "/delon/util",
+              "i18n": "menu.delon.util",
+              "acl": "role-a"
+            },
+            {
+              "text": "Print",
+              "link": "/delon/print",
+              "i18n": "menu.delon.print",
+              "acl": "role-b"
+            },
+            {
+              "text": "QR",
+              "link": "/delon/qr",
+              "i18n": "menu.delon.qr"
+            },
+            {
+              "text": "ACL",
+              "link": "/delon/acl",
+              "i18n": "menu.delon.acl"
+            },
+            {
+              "text": "Route Guard",
+              "link": "/delon/guard",
+              "i18n": "menu.delon.guard"
+            },
+            {
+              "text": "Cache",
+              "link": "/delon/cache",
+              "i18n": "menu.delon.cache"
+            },
+            {
+              "text": "Down File",
+              "link": "/delon/downfile",
+              "i18n": "menu.delon.downfile"
+            },
+            {
+              "text": "Xlsx",
+              "link": "/delon/xlsx",
+              "i18n": "menu.delon.xlsx"
+            },
+            {
+              "text": "Zip",
+              "link": "/delon/zip",
+              "i18n": "menu.delon.zip"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  
+}

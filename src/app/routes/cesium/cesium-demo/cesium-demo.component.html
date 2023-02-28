@@ -1,0 +1,55 @@
+<div nz-row>
+  <div nz-col nzSpan="5" class="p-md">
+    <h3>配置</h3>
+    <nz-button-group class="m-md"></nz-button-group>
+    <h3>图层</h3>
+    <nz-button-group class="m-md">
+      <!-- <button nz-button nzType="link" nzSize="small" (click)="doAddImageryProvider('')">清空</button> -->
+      <button
+        nz-button
+        nzType="link"
+        nzSize="small"
+        (click)="doAddImageryProvider('http://webrd02.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=8&x={x}&y={y}&z={z}')"
+      >
+        高德矢量图
+      </button>
+      <button
+        nz-button
+        nzType="link"
+        nzSize="small"
+        (click)="doAddImageryProvider('https://webst02.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}')"
+      >
+        高德影像图
+      </button>
+      <!-- <button nz-button nzType="link" nzSize="small" (click)="doAddWindLayer()" disabled>风场</button> -->
+    </nz-button-group>
+    <h3>相机</h3>
+    <nz-button-group class="m-md">
+      <button nz-button nzType="link" nzSize="small" (click)="doFlyToCompany()">飞到公司(低飞)</button>
+      <button nz-button nzType="link" nzSize="small" (click)="doSetViewBoundingSphere()">围着公司转(锁定了)</button>
+    </nz-button-group>
+    <nz-button-group class="m-md">
+      <button nz-button nzType="link" nzSize="small" (click)="doFlyToHome()">飞到家(低飞)</button>
+      <button nz-button nzType="link" nzSize="small" (click)="doSetViewBoundingSphereOfHome()">围着家转(锁定了)</button>
+    </nz-button-group>
+    <h3>业务</h3>
+    <nz-button-group class="m-md">
+      <button nz-button nzType="link" nzSize="small" (click)="doFlyToFactory()">飞到工厂(高飞)</button>
+      <button nz-button nzType="link" nzSize="small" (click)="doFactory()">围着工厂转(锁定了)</button>
+    </nz-button-group>
+    <nz-button-group class="m-md">
+      <button nz-button nzType="link" nzSize="small" (click)="doFire()" [disabled]="wuRan">扬尘污染开始</button>
+      <button nz-button nzType="link" nzSize="small" (click)="doCancelFire()" [disabled]="!wuRan">扬尘污染结束</button>
+    </nz-button-group>
+    <nz-button-group class="m-md">
+      <button nz-button nzType="link" nzSize="small" (click)="doWaterCar()">洒水车作业</button>
+    </nz-button-group>
+  </div>
+  <div nz-col nzSpan="19">
+    <div id="cesiumContainer" style="height: calc(100vh)"></div>
+  </div>
+</div>
+
+<!-- <div class="fixed-top m-lg">
+    <button nz-button nzType="primary" nzShape="circle" (click)="open()"><i nz-icon nzType="bug"></i></button>
+</div> -->

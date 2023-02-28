@@ -1,0 +1,22 @@
+<page-header></page-header>
+<nz-card>
+  <sf mode="search" [schema]="searchSchema" (formSubmit)="st.reset($event)" (formReset)="st.reset($event)"></sf>
+  <button (click)="add()" nz-button nzType="primary">
+    <span nz-icon nzType="plus" nzTheme="outline"></span>
+    新增数据字典
+  </button>
+  <button (click)="refreshCache()" nz-button nzType="primary">
+    <span nz-icon nzType="reload" nzTheme="outline"></span>
+    刷新缓存
+  </button>
+  <div class="my-sm">
+    <!-- <nz-alert [nzType]="'info'" [nzShowIcon]="true" [nzMessage]="message">
+      <ng-template #message>
+        已选择
+        <strong class="text-primary">0</strong>
+        项&nbsp;&nbsp; 服务调用总计 万
+      </ng-template>
+    </nz-alert> -->
+  </div>
+  <st #st [data]="url" [columns]="columns"></st>
+</nz-card>
