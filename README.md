@@ -30,11 +30,10 @@ yarn start # 本地运行
 + 演示实现粒子系统的粒子效果
 
 
-## Architecture
+## Demo Gif
 
-![Architecture](https://raw.githubusercontent.com/ng-alain/delon/master/_screenshot/architecture.png)
+![Demo](./demo.gif)
 
-> [delon](https://github.com/ng-alain/delon) 是基于 Ant Design 设计理念的企业级中后台前端业务型组件库。
 
 ### License
 
